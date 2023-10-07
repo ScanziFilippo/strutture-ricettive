@@ -1,0 +1,22 @@
+<!ELEMENT strutture (struttura*)>
+<!ELEMENT struttura (tipologia, classificazione, denominazione, indirizzo, camere?, unita-abitative?)>
+<!ELEMENT tipologia (#PCDATA)>
+<!ELEMENT classificazione (#PCDATA)>
+<!ELEMENT denominazione (#PCDATA)>
+<!ELEMENT indirizzo (#PCDATA)>
+<!ELEMENT camere (singole*, doppie*, triple*, quadruple*, quintuple*, sestuple*)>
+<!ELEMENT singole (#PCDATA)>
+<!ELEMENT doppie (#PCDATA)>
+<!ELEMENT triple (#PCDATA)>
+<!ELEMENT quadruple (#PCDATA)>
+<!ELEMENT quintuple (#PCDATA)>
+<!ELEMENT sestuple (#PCDATA)>
+<!ELEMENT unita-abitative (#PCDATA)>
+<!ATTLIST camere 
+    totale CDATA #REQUIRED
+    posti-letto-totali CDATA #REQUIRED
+>
+<!ATTLIST unita-abitative
+    totale CDATA #REQUIRED
+    posti-letto-totali CDATA #REQUIRED    
+    >

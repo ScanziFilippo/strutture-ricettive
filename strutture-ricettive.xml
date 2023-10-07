@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE strutture [
+    <!ELEMENT strutture (struttura*)>
+    <!ELEMENT struttura (tipologia, classificazione, denominazione, indirizzo, camere?, unita-abitative?)>
+    <!ELEMENT tipologia (#PCDATA)>
+    <!ELEMENT classificazione (#PCDATA)>
+    <!ELEMENT denominazione (#PCDATA)>
+    <!ELEMENT indirizzo (#PCDATA)>
+    <!ELEMENT camere (singole*, doppie*, triple*, quadruple*, quintuple*, sestuple*)>
+    <!ELEMENT singole (#PCDATA)>
+    <!ELEMENT doppie (#PCDATA)>
+    <!ELEMENT triple (#PCDATA)>
+    <!ELEMENT quadruple (#PCDATA)>
+    <!ELEMENT quintuple (#PCDATA)>
+    <!ELEMENT sestuple (#PCDATA)>
+    <!ELEMENT unita-abitative (#PCDATA)>
+    <!ATTLIST camere 
+        totale CDATA #REQUIRED
+        posti-letto-totali CDATA #REQUIRED
+    >
+    <!ATTLIST unita-abitative
+        totale CDATA #REQUIRED
+        posti-letto-totali CDATA #REQUIRED    
+    >
+]>
+<strutture>
+    <struttura>
+        <tipologia>
+            Albergo
+        </tipologia>
+        <classificazione>
+            1 Stella
+        </classificazione>
+        <denominazione>
+            ALBERGO GABRIELE
+        </denominazione>
+        <indirizzo>
+            VIA PRINCIPE AMEDEO, 76
+        </indirizzo>
+        <camere totale="8" posti-letto-totali="17">
+            <singole>
+                2
+            </singole>
+            <doppie>
+                3
+            </doppie>
+            <triple>
+                3
+            </triple>
+            <quadruple>
+                0
+            </quadruple>
+            <quintuple>
+                0
+            </quintuple>
+            <sestuple>
+                0
+            </sestuple>
+        </camere>
+        <unita-abitative totale="0" posti-letto-totali="0"/>
+    </struttura>
+    <struttura>
+        <tipologia>
+            Casa Vacanze impr (Appartamento)
+        </tipologia>
+        <classificazione>
+            Categoria 2
+        </classificazione>
+        <denominazione>
+            CASA E APPARTAMENTO PER VACANZE SANT'ANGELO DESIGN ART APARTMENT
+        </denominazione>
+        <indirizzo>
+            VIA DI S. ANGELO IN PESCHERIA, 28
+        </indirizzo>
+        <camere totale="1" posti-letto-totali="2">
+            <singole>
+                0
+            </singole>
+            <doppie>
+                1
+            </doppie>
+            <triple>
+                0
+            </triple>
+            <quadruple>
+                0
+            </quadruple>
+            <quintuple>
+                0
+            </quintuple>
+            <sestuple>
+                0
+            </sestuple>
+        </camere>
+        <unita-abitative totale="0" posti-letto-totali="0"/>
+    </struttura>
+    <struttura>
+        <tipologia>
+            Albergo
+        </tipologia>
+        <classificazione>
+            5 Stelle
+        </classificazione>
+        <denominazione>
+            ALBERGO ALDROVANDI VILLA BORGHESE
+        </denominazione>
+        <indirizzo>
+            VIA ULISSE ALDROVANDI, 15
+        </indirizzo>
+        <camere totale="103" posti-letto-totali="210">
+            <singole>
+                0
+            </singole>
+            <doppie>
+                99
+            </doppie>
+            <triple>
+                4
+            </triple>
+            <quadruple>
+                0
+            </quadruple>
+            <quintuple>
+                0
+            </quintuple>
+            <sestuple>
+                0
+            </sestuple>
+        </camere>
+        <unita-abitative totale="0" posti-letto-totali="0"/>
+    </struttura>
+    <struttura>
+        <tipologia>
+            Casa Vacanze NON impr (Appartamento)
+        </tipologia>
+        <classificazione>
+            Categoria 2
+        </classificazione>
+        <denominazione>
+            CASA A APPARTAMENTO PER VACANZE COLLI ALBANI TERRACE
+        </denominazione>
+        <indirizzo>
+            LARGO DEI COLLI ALBANI, 39
+        </indirizzo>
+        <camere totale="0" posti-letto-totali="0">
+            <singole>
+                0
+            </singole>
+            <doppie>
+                0
+            </doppie>
+            <triple>
+                0
+            </triple>
+            <quadruple>
+                0
+            </quadruple>
+            <quintuple>
+                0
+            </quintuple>
+            <sestuple>
+                0
+            </sestuple>
+        </camere>
+        <unita-abitative totale="1" posti-letto-totali="2"/>
+    </struttura>
+</strutture>
