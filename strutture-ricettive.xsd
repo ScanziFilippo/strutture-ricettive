@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="strutture">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="struttura" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="tipologia" type="xs:string"/>
+                            <xs:element name="classificazione" type="xs:string"/>
+                            <xs:element name="denominazione" type="xs:string"/>
+                            <xs:element name="indirizzo" type="xs:string"/>
+                            <xs:element name="camere">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="singole" type="xs:integer"/>
+                                        <xs:element name="doppie" type="xs:integer"/>
+                                        <xs:element name="triple" type="xs:integer"/>
+                                        <xs:element name="quadruple" type="xs:integer"/>
+                                        <xs:element name="quintuple" type="xs:integer"/>
+                                        <xs:element name="sestuple" type="xs:integer"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="totale" type="xs:integer" use="required"/>
+                                    <xs:attribute name="posti-letto-totali" type="xs:integer" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="unita-abitative">
+                                <xs:complexType>
+                                    <xs:attribute name="totale" type="xs:integer" use="required"/>
+                                    <xs:attribute name="posti-letto-totali" type="xs:integer" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

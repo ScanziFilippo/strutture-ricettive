@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="strutture-ricettive.xsl" type="text/xsl"?>
 <!DOCTYPE strutture [
     <!ELEMENT strutture (struttura*)>
     <!ELEMENT struttura (tipologia, classificazione, denominazione, indirizzo, camere?, unita-abitative?)>
