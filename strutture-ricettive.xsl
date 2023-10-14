@@ -19,29 +19,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             <th>Posti letto</th>
                             <th>Unita abitative</th>
                         </tr>
-                        <xsl:for-each select="strutture/struttura">
+                        <xsl:for-each select="strutture">
                             <tr>
                                 <td>
-                                    <xsl:value-of select="tipologia"/>
+                                    <xsl:value-of select="strutture/struttura/tipologia"/>
                                 </td>
-                                <td>
-                                    <xsl:value-of select="classificazione"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="denominazione"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="indirizzo"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="camere/@totale"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="camere/@posti-letto-totali"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="unita-abitative/@totale"/>
-                                </td>
+
                             </tr>
                         </xsl:for-each>
                     </table>
