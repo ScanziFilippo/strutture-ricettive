@@ -26,9 +26,7 @@
 ]>
 <strutture>
     <struttura>
-        <tipologia>
-            Albergo
-        </tipologia>
+        <tipologia>Albergo</tipologia>
         <classificazione>
             1 Stella
         </classificazione>
@@ -96,9 +94,7 @@
         <unita-abitative totale="0" posti-letto-totali="0"/>
     </struttura>
     <struttura>
-        <tipologia>
-            Albergo
-        </tipologia>
+        <tipologia>Albergo</tipologia>
         <classificazione>
             5 Stelle
         </classificazione>
