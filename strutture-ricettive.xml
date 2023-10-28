@@ -2,14 +2,14 @@
 <?xml-stylesheet href="strutture-ricettive.xsl" type="text/xsl"?>
 <!DOCTYPE strutture [
     <!ELEMENT strutture (struttura*)>
-    <!ELEMENT struttura (classe, tipologia, classificazione, denominazione, indirizzo, camere?, unita-abitative?)>
+    <!ELEMENT struttura (tipologia, classificazione, denominazione, indirizzo, camere?, unita-abitative?)>
     <!ELEMENT classe (#PCDATA)>
     <!ELEMENT tipologia (#PCDATA)>
     <!ELEMENT classificazione (#PCDATA)>
     <!ELEMENT denominazione (#PCDATA)>
     <!ELEMENT indirizzo (#PCDATA)>
     <!ELEMENT camere (singole*, doppie*, triple*, quadruple*, quintuple*, sestuple*)>
-    <!ELEMENT singole (#PCDATA)>
+    <!ELEMENT singole (#PCDATA|classe)*>
     <!ELEMENT doppie (#PCDATA)>
     <!ELEMENT triple (#PCDATA)>
     <!ELEMENT quadruple (#PCDATA)>
@@ -30,7 +30,6 @@
 ]>
 <strutture>
     <struttura>
-        <classe nome="123"/>
         <tipologia>Albergo</tipologia>
         <classificazione>
             1 Stella
@@ -43,6 +42,7 @@
         </indirizzo>
         <camere totale="8" posti-letto-totali="17">
             <singole>
+                <classe nome="123"/>
                 2
             </singole>
             <doppie>
@@ -64,7 +64,6 @@
         <unita-abitative totale="0" posti-letto-totali="0"/>
     </struttura>
     <struttura>
-        <classe nome="321"/>
         <tipologia>
             Casa Vacanze impr (Appartamento)
         </tipologia>
@@ -79,6 +78,7 @@
         </indirizzo>
         <camere totale="1" posti-letto-totali="2">
             <singole>
+                <classe nome="321"/>
                 0
             </singole>
             <doppie>
@@ -100,7 +100,6 @@
         <unita-abitative totale="0" posti-letto-totali="0"/>
     </struttura>
     <struttura>
-        <classe nome="456"/>
         <tipologia>Albergo</tipologia>
         <classificazione>
             5 Stelle
@@ -113,6 +112,7 @@
         </indirizzo>
         <camere totale="103" posti-letto-totali="210">
             <singole>
+                <classe nome="456"/>
                 0
             </singole>
             <doppie>
@@ -134,7 +134,6 @@
         <unita-abitative totale="0" posti-letto-totali="0"/>
     </struttura>
     <struttura>
-        <classe nome="654"/>
         <tipologia>
             Casa Vacanze NON impr (Appartamento)
         </tipologia>
@@ -149,6 +148,7 @@
         </indirizzo>
         <camere totale="0" posti-letto-totali="0">
             <singole>
+                <classe nome="654"/>
                 0
             </singole>
             <doppie>

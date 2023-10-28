@@ -6,11 +6,6 @@
                 <xs:element name="struttura" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="classe">
-                                <xs:complexType>
-                                            <xs:attribute name="nome" type="xs:string" use="required"/>
-                                </xs:complexType>
-                            </xs:element>
                             <xs:element name="tipologia" type="xs:string"/>
                             <xs:element name="classificazione" type="xs:string"/>
                             <xs:element name="denominazione" type="xs:string"/>
@@ -18,7 +13,17 @@
                             <xs:element name="camere">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="singole" type="xs:integer"/>
+                                        <xs:element name="singole">
+                                            <xs:complexType mixed="true">
+                                                <xs:sequence>
+                                                    <xs:element name="classe" maxOccurs="1">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="nome" type="xs:string" use="required"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
                                         <xs:element name="doppie" type="xs:integer"/>
                                         <xs:element name="triple" type="xs:integer"/>
                                         <xs:element name="quadruple" type="xs:integer"/>

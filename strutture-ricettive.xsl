@@ -25,7 +25,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <xsl:for-each select="strutture/struttura">
                             <tr>
                                 <td>
-                                    <xsl:value-of select="classe/@nome"/>
+                                    <xsl:value-of select="camere/singole/classe/@nome"/>
                                 </td>
                                 <td>
                                     <xsl:value-of select="tipologia"/>
@@ -70,7 +70,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <xsl:for-each select="strutture/struttura[camere/@totale>0]">
                             <tr>
                                 <td>
-                                    <xsl:value-of select="classe/@nome"/>
+                                    <xsl:value-of select="camere/singole/classe/@nome"/>
                                 </td>
                                 <td>
                                     <xsl:value-of select="tipologia"/>
@@ -115,7 +115,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <xsl:for-each select="strutture/struttura[unita-abitative/@totale>0]">
                             <tr>
                                 <td>
-                                    <xsl:value-of select="classe/@nome"/>
+                                    <xsl:value-of select="camere/singole/classe/@nome"/>
                                 </td>
                                 <td>
                                     <xsl:value-of select="tipologia"/>
@@ -160,7 +160,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <xsl:for-each select='strutture/struttura[tipologia="Albergo"]'>
                             <tr>
                                 <td>
-                                    <xsl:value-of select="classe/@nome"/>
+                                    <xsl:value-of select="camere/singole/classe/@nome"/>
                                 </td>
                                 <td>
                                     <xsl:value-of select="tipologia"/>
