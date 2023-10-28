@@ -12,6 +12,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     <h2>Tutte</h2>
                     <table border="1">
                         <tr>
+                            <th>Classe</th>
                             <th>Tipologia</th>
                             <th>Classificazione</th>
                             <th>Denominazione</th>
@@ -23,6 +24,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         </tr>
                         <xsl:for-each select="strutture/struttura">
                             <tr>
+                                <td>
+                                    <xsl:value-of select="classe/@nome"/>
+                                </td>
                                 <td>
                                     <xsl:value-of select="tipologia"/>
                                 </td>
@@ -53,6 +57,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     <h2>Almeno 1 camera</h2>
                     <table border="1">
                         <tr>
+                            <th>Classe</th>
                             <th>Tipologia</th>
                             <th>Classificazione</th>
                             <th>Denominazione</th>
@@ -64,6 +69,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         </tr>
                         <xsl:for-each select="strutture/struttura[camere/@totale>0]">
                             <tr>
+                                <td>
+                                    <xsl:value-of select="classe/@nome"/>
+                                </td>
                                 <td>
                                     <xsl:value-of select="tipologia"/>
                                 </td>
@@ -94,6 +102,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     <h2>Almeno 1 unita abitativa</h2>
                     <table border="1">
                         <tr>
+                            <th>Classe</th>
                             <th>Tipologia</th>
                             <th>Classificazione</th>
                             <th>Denominazione</th>
@@ -105,6 +114,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         </tr>
                         <xsl:for-each select="strutture/struttura[unita-abitative/@totale>0]">
                             <tr>
+                                <td>
+                                    <xsl:value-of select="classe/@nome"/>
+                                </td>
                                 <td>
                                     <xsl:value-of select="tipologia"/>
                                 </td>
@@ -135,6 +147,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     <h2>Solo alberghi</h2>
                     <table border="1">
                         <tr>
+                            <th>Classe</th>
                             <th>Tipologia</th>
                             <th>Classificazione</th>
                             <th>Denominazione</th>
@@ -146,6 +159,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         </tr>
                         <xsl:for-each select='strutture/struttura[tipologia="Albergo"]'>
                             <tr>
+                                <td>
+                                    <xsl:value-of select="classe/@nome"/>
+                                </td>
                                 <td>
                                     <xsl:value-of select="tipologia"/>
                                 </td>
