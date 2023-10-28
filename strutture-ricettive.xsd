@@ -13,7 +13,7 @@
                             <xs:element name="camere">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="singole">
+                                        <xs:element name="singole" maxOccurs="1">
                                             <xs:complexType mixed="true">
                                                 <xs:sequence>
                                                     <xs:element name="classe" maxOccurs="1">
@@ -24,11 +24,11 @@
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
-                                        <xs:element name="doppie" type="xs:integer"/>
-                                        <xs:element name="triple" type="xs:integer"/>
-                                        <xs:element name="quadruple" type="xs:integer"/>
-                                        <xs:element name="quintuple" type="xs:integer"/>
-                                        <xs:element name="sestuple" type="xs:integer"/>
+                                        <xs:element name="doppie"  maxOccurs="1" type="xs:integer"/>
+                                        <xs:element name="triple"  maxOccurs="1" type="xs:integer"/>
+                                        <xs:element name="quadruple"  maxOccurs="1" type="xs:integer"/>
+                                        <xs:element name="quintuple"  maxOccurs="1" type="xs:integer"/>
+                                        <xs:element name="sestuple"  maxOccurs="1" type="xs:integer"/>
                                     </xs:sequence>
                                     <xs:attribute name="totale" type="xs:integer" use="required"/>
                                     <xs:attribute name="posti-letto-totali" type="xs:integer" use="required"/>

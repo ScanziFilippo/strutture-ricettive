@@ -5,7 +5,7 @@
 <!ELEMENT classificazione (#PCDATA)>
 <!ELEMENT denominazione (#PCDATA)>
 <!ELEMENT indirizzo (#PCDATA)>
-<!ELEMENT camere (singole*, doppie*, triple*, quadruple*, quintuple*, sestuple*)>
+<!ELEMENT camere (singole, doppie, triple, quadruple, quintuple, sestuple)>
 <!ELEMENT singole (#PCDATA|classe)*>
 <!ELEMENT doppie (#PCDATA)>
 <!ELEMENT triple (#PCDATA)>

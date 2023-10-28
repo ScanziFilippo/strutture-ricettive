@@ -6,12 +6,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             <head>
                 <title>Strutture ricettive di Roma Capitale</title>
             </head>
-            <body>
+            <body style="font-family:'Arial'">
                 <div>
-                    <h1>Strutture ricettive di Roma Capitale</h1>
+                    <h1>4 Strutture ricettive di Roma Capitale</h1>
+                    <p>Un esercitazione in XML, DTD, XSD, XSLT</p>
+                    <hr class="dashed"/>
                     <h2>Tutte</h2>
-                    <table border="1">
-                        <tr>
+                    <table border="0" style="border-spacing: 5px">
+                        <tr style="background-color:Tomato">
                             <th>Classe</th>
                             <th>Tipologia</th>
                             <th>Classificazione</th>
@@ -54,9 +56,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             </tr>
                         </xsl:for-each>
                     </table>
+                    <br></br>
+                    <hr class="rounded"/>
                     <h2>Almeno 1 camera</h2>
-                    <table border="1">
-                        <tr>
+                    <table border="0" style="border-spacing: 5px">
+                        <tr style="background-color:Tomato">
                             <th>Classe</th>
                             <th>Tipologia</th>
                             <th>Classificazione</th>
@@ -99,9 +103,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             </tr>
                         </xsl:for-each>
                     </table>
+                    <br></br>
+                    <hr class="rounded"/>
                     <h2>Almeno 1 unita abitativa</h2>
-                    <table border="1">
-                        <tr>
+                    <table border="0" style="border-spacing: 5px">
+                        <tr style="background-color:Tomato">
                             <th>Classe</th>
                             <th>Tipologia</th>
                             <th>Classificazione</th>
@@ -144,9 +150,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             </tr>
                         </xsl:for-each>
                     </table>
+                    <br></br>
+                    <hr class="rounded"/>
                     <h2>Solo alberghi</h2>
-                    <table border="1">
-                        <tr>
+                    <table border="0" style="border-spacing: 5px">
+                        <tr style="background-color:Tomato">
                             <th>Classe</th>
                             <th>Tipologia</th>
                             <th>Classificazione</th>
