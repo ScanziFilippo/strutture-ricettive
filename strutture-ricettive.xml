@@ -2,7 +2,8 @@
 <?xml-stylesheet href="strutture-ricettive.xsl" type="text/xsl"?>
 <!DOCTYPE strutture [
     <!ELEMENT strutture (struttura*)>
-    <!ELEMENT struttura (tipologia, classificazione, denominazione, indirizzo, camere?, unita-abitative?)>
+    <!ELEMENT struttura (classe, tipologia, classificazione, denominazione, indirizzo, camere?, unita-abitative?)>
+    <!ELEMENT classe (#PCDATA)>
     <!ELEMENT tipologia (#PCDATA)>
     <!ELEMENT classificazione (#PCDATA)>
     <!ELEMENT denominazione (#PCDATA)>
@@ -15,6 +16,9 @@
     <!ELEMENT quintuple (#PCDATA)>
     <!ELEMENT sestuple (#PCDATA)>
     <!ELEMENT unita-abitative (#PCDATA)>
+    <!ATTLIST classe
+        nome CDATA #REQUIRED
+    >
     <!ATTLIST camere 
         totale CDATA #REQUIRED
         posti-letto-totali CDATA #REQUIRED
@@ -26,6 +30,7 @@
 ]>
 <strutture>
     <struttura>
+        <classe nome="123"/>
         <tipologia>Albergo</tipologia>
         <classificazione>
             1 Stella
@@ -59,6 +64,7 @@
         <unita-abitative totale="0" posti-letto-totali="0"/>
     </struttura>
     <struttura>
+        <classe nome="321"/>
         <tipologia>
             Casa Vacanze impr (Appartamento)
         </tipologia>
@@ -94,6 +100,7 @@
         <unita-abitative totale="0" posti-letto-totali="0"/>
     </struttura>
     <struttura>
+        <classe nome="456"/>
         <tipologia>Albergo</tipologia>
         <classificazione>
             5 Stelle
@@ -127,6 +134,7 @@
         <unita-abitative totale="0" posti-letto-totali="0"/>
     </struttura>
     <struttura>
+        <classe nome="654"/>
         <tipologia>
             Casa Vacanze NON impr (Appartamento)
         </tipologia>
